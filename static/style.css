@@ -6,10 +6,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
 
 /* コンテナ：コンテンツを中央に配置し、見やすくする */
@@ -20,6 +16,7 @@ body {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* 影で立体感を出す */
+    margin: 0 auto; /* この1行で水平方向の中央揃えを実現 */
 }
 
 /* ヘッダー：タイトルと装飾 */
