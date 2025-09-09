@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>脳トレ日記</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🧠 脳トレ日記アプリ</h1>
+    <form action="/submit" method="post">
+        <h2>5W1Hで記録しよう</h2>
+        <label for="when">いつ？</label>
+        <input type="text" id="when" name="when"><br>
+
+        <label for="where">どこで？</label>
+        <input type="text" id="where" name="where"><br>
+
+        <label for="who">誰が？</label>
+        <input type="text" id="who" name="who"><br>
+
+        <label for="what">何を？</label>
+        <textarea id="what" name="what"></textarea><br>
+        
+        <label for="why">なぜ？</label>
+        <input type="text" id="why" name="why"><br>
+
+        <label for="how">どのように？</label>
+        <input type="text" id="how" name="how"><br>
+
+        <h2>場所と感情をタグ付け</h2>
+        <label for="location_tag">場所タグ（例: カフェ）</label>
+        <input type="text" id="location_tag" name="location_tag"><br>
+
+        <label for="emotion_tag">感情タグ（例: 集中できた）</label>
+        <input type="text" id="emotion_tag" name="emotion_tag"><br>
+
+        <h2>キーワードを追加</h2>
+        <label for="keywords">キーワード（例: 不動産登記法, 筆）</label>
+        <input type="text" id="keywords" name="keywords"><br>
+
+        <button type="submit">日記を記録</button>
+    </form>
+    
+    <br>
+    <a href="/quiz">ランダムクイズで振り返る</a>
+    <br>
+    <a href="/review">過去の日記をすべて見る</a>
+</body>
+</html>
